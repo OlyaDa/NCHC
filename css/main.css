@@ -470,6 +470,17 @@ a {
   opacity: 0.6;
 }
 
+.download-btn {
+  font-size: 21px;
+  line-height: 25px;
+  color: #2fbcd3;
+  padding: 10px 24px;
+  margin-bottom: 100px;
+  margin-top: -120px;
+  border: 2px solid #2fbcd3;
+  border-radius: 6px;
+}
+
 .descr {
   width: 636px;
   background: #e1e1e1;
