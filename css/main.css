@@ -648,6 +648,41 @@ a {
   stroke: red !important;
 }
 
+.hide {
+  display: none;
+}
+
+.speedometer__value {
+  margin-top: -205px;
+  font-size: 54.6411px;
+  line-height: 66px;
+  color: #2e7f98;
+}
+
+.speedometer__value::after {
+  content: "mpbs";
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 6px;
+  font-size: 21.2493px;
+  line-height: 26px;
+  color: #2e7f98;
+}
+
+.speedometer__btn {
+  font-size: 21.2493px;
+  line-height: 26px;
+  color: #2fbcd3;
+  padding: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 110px;
+}
+
+.speedometer__btn:hover {
+  color: #2e7f98;
+}
+
 .footer {
   padding: 20px 0px;
   background: #0d100f;
