@@ -1,7 +1,13 @@
 :root {
-    --color-black: #0d100f;
-    --color-white: #ffffff;
-    --color-blue: #2e7f98;
+    --color-darkblack: #0d100f;
+    --color-black: #333333;
+    --color-gray: #B8B5B5;
+    --color-lightgray: #EEEEEF;
+    --color-mercury: #E1E1E1;
+    --color-white: #FFFFFF;
+    --color-blue: #2E7F98;
+    --color-lightblue: #2FBCD3;
+    
 }
 
 * {
@@ -56,40 +62,4 @@ a {
     padding: 0;
     background: transparent;
     cursor: pointer;
-}
-
-.preloader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    background: #e0e0e0;
-    z-index: 1001;
-}
-
-.preloader__image {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    width: 64px;
-    height: 64px;
-    background: url("../images/loading.gif");
-    background-size: cover;
-}
-
-@keyframes preloader-rotate {
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.loaded_hiding .preloader {
-    transition: 0.3s opacity;
-    opacity: 0;
-}
-
-.loaded .preloader {
-    display: none;
 }

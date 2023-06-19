@@ -1,12 +1,12 @@
 .footer {
     padding: 20px 0px;
-    background: #0d100f;
+    background: var(--color-darkblack);
     &__text {
         text-align: center;
         font-size: 18px;
         line-height: 22px;
         text-align: center;
-        color: #eeeeef;
+        color: var(--color-lightgray);
         margin: 0;
     }
     &__visitors {
@@ -14,7 +14,7 @@
         font-size: 18px;
         line-height: 22px;
         text-align: center;
-        color: #eeeeef;
+        color: var(--color-lightgray);
         margin: 0;
     }
 }

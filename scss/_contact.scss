@@ -13,31 +13,31 @@
 
 .contact-info {
     padding: 24px;
-    background: #eeeeef;
+    background: var(--color-lightgray);
     border-radius: 6px;
     max-width: 636px;
     &__title {
         font-weight: 700;
         font-size: 21px;
         line-height: 25px;
-        color: #333333;
+        color: var(--color-black);
         margin: 0;
         margin-bottom: 24px;
     }
     &__caption {
         font-size: 18px;
         line-height: 22px;
-        color: #333333;
+        color: var(--color-black);;
         opacity: 0.6;
     }
     &__text {
         display: inline-block;
         font-size: 18px;
         line-height: 22px;
-        color: #333333;
+        color: var(--color-black);;
         transition: color 0.3s ease-in-out;
     }
     a:hover {
-        color: #2E7F98;
+        color: var(--color-blue);;
     }
 }

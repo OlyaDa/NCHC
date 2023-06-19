@@ -17,16 +17,16 @@
         font-size: 21px;
         line-height: 25px;
         padding: 12px 20px;
-        color: #ffffff;
+        color: var(--color-white);
         min-width: 208px;
-        background-color: #2e7f98;
+        background-color: var(--color-blue);
         border-radius: 4px;
         transition: all 0.3s ease-in-out;
         &:not(:last-child) {
             margin-bottom: 8px;
         }
         &:hover {
-            background-color: #2FBCD3;
+            background-color: var(--color-lightblue);
         }
     }
     &__title {
@@ -36,7 +36,7 @@
         margin-bottom: 63px;
         font-size: 48px;
         line-height: 58px;
-        color: #333333;
+        color: var(--color-black);
         &::after {
             content: "";
             position: absolute;
@@ -44,13 +44,13 @@
             right: -10px;
             left: -10000px;
             height: 4px;
-            background-color: #2e7f98;
+            background-color: var(--color-blue);
         }
     }
     &__text {
         font-size: 18px;
         line-height: 22px;
-        color: #333333;
+        color: var(--color-black);
         margin: 0;
         &:not(:last-child) {
             margin-bottom: 25px;

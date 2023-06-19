@@ -1,0 +1,95 @@
+.choices__list--single .choices__item {
+    text-align: left;
+}
+
+.choices__list--dropdown .choices__item--selectable::after,
+.choices__list[aria-expanded] .choices__item--selectable::after {
+    display: none;
+}
+
+.choices__list--dropdown .choices__item--selectable {
+    padding-right: 0px;
+}
+
+.choices[data-type*="select-one"] .choices__inner {
+    padding-bottom: 0px;
+}
+
+.choices__inner {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    min-height: 21px;
+    font-size: 21px;
+    line-height: 25px;
+    color: var(--color-black);
+    border: 0px solid transparent;
+    background-color: transparent;
+    min-width: fit-content;
+    width: fit-content;
+}
+
+.choices__list--dropdown .choices__item--selectable,
+.choices__list[aria-expanded] .choices__item--selectable {
+    font-size: 21px;
+    line-height: 25px;
+    color: var(--color-black);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.choices__list--single {
+    padding: 0;
+}
+
+.choices {
+    width: max-content;
+    padding: 0px 30px 0px 5px;
+}
+
+.choices[data-type*="select-one"]:after {
+    right: 0px;
+    margin-top: 0;
+    border: none;
+    width: 18px;
+    height: 9px;
+    background-image: url("../images/arrow-down.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease-in-out;
+}
+.choices[data-type*="select-one"].is-open:after {
+    margin-top: 0px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.choices__list--dropdown {
+    background-color: var(--color-white);
+}
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+    transition: all 0.3s ease-in-out;
+    color: var(--color-gray);
+    background-color: var(--color-white);
+}
+
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
+    visibility: hidden;
+    z-index: 1;
+    position: absolute;
+    width: max-content;
+    background-color: var(--color-white);
+    border: 1px solid #ddd;
+    top: 100%;
+    margin-top: -1px;
+    border-bottom-left-radius: 2.5px;
+    border-bottom-right-radius: 2.5px;
+    overflow: hidden;
+    word-break: break-all;
+    will-change: visibility;
+    margin-left: -5px;
+}

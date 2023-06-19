@@ -1,13 +1,5 @@
-
-.color {
-    stroke: red !important;
-}
-
-.hide {
-    display: none;
-}
-
-.speedometer{
+.speedometer {
+    position: relative;
     &__value {
         margin-top: -205px;
         font-size: 54.6411px;
@@ -20,19 +12,34 @@
             margin-bottom: 6px;
             font-size: 21.2493px;
             line-height: 26px;
-            color: #2e7f98;
+            color: var(--color-blue);
         }
     }
     &__btn {
         font-size: 21.2493px;
         line-height: 26px;
-        color: #2fbcd3;
+        color: var(--color-lightblue);
         padding: 5px;
         transition: all 0.3s ease-in-out;
-        margin-bottom: 110px;
+        margin-bottom: 51px;
         &:hover {
-            color: #2e7f98;
+            color: var(--color-blue);
         }
     }
 }
 
+.color {
+    stroke: var(--color-blue) !important;
+}
+.color-fill {
+    fill: var(--color-blue) !important;
+}
+.speedometer-ticks {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hide {
+    display: none;
+}
