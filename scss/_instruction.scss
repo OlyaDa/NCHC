@@ -1,0 +1,31 @@
+.instruction {
+    position: relative;
+    padding: 44px 0;
+    &__title {
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        margin-bottom: 63px;
+        font-size: 48px;
+        line-height: 58px;
+        color: #333333;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 81px;
+            right: -10px;
+            left: -10000px;
+            height: 4px;
+            background-color: #2e7f98;
+        }
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 22px;
+        color: #333333;
+        margin: 0;
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+}

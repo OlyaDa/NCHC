@@ -1,0 +1,43 @@
+.traceroute {
+  position: relative;
+  padding: 44px 0;
+}
+
+.traceroute__title {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 63px;
+  font-size: 48px;
+  line-height: 58px;
+  color: #333333;
+}
+
+.traceroute__title::after {
+  content: "";
+  position: absolute;
+  top: 81px;
+  right: -10px;
+  left: -10000px;
+  height: 4px;
+  background-color: #2e7f98;
+}
+
+.traceroute__text {
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  margin: 0;
+}
+
+.traceroute__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.traceroute__text:first-child {
+  margin-bottom: 36px;
+}
+
+.traceroute__text:last-child {
+  margin-top: 36px;
+}

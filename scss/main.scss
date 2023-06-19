@@ -5,8 +5,7 @@
     src: url("../fonts/tahoma-regular.eot");
     src: url("../fonts/tahoma-regular.eot?#iefix") format("embedded-opentype"),
         url("../fonts/tahoma-regular.woff2") format("woff2"), url("../fonts/tahoma-regular.woff") format("woff"),
-        url("../fonts/tahoma-regular.ttf") format("truetype"),
-        url("../fonts/tahoma-regular.svg#tahoma") format("svg");
+        url("../fonts/tahoma-regular.ttf") format("truetype"), url("../fonts/tahoma-regular.svg#tahoma") format("svg");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -27,4 +26,10 @@
 @import "_header";
 @import "_speed-test";
 @import "_speedometer";
+@import "_contact";
+@import "_privacy";
+@import "_instruction";
+@import "_traceroute";
+@import "_traceroute";
+@import "_opt-instructions";
 @import "_footer";

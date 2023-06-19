@@ -1,0 +1,43 @@
+.contact {
+    height: 100vh;
+    padding: 60px 0;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.contact-info {
+    padding: 24px;
+    background: #eeeeef;
+    border-radius: 6px;
+    max-width: 636px;
+    &__title {
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 25px;
+        color: #333333;
+        margin: 0;
+        margin-bottom: 24px;
+    }
+    &__caption {
+        font-size: 18px;
+        line-height: 22px;
+        color: #333333;
+        opacity: 0.6;
+    }
+    &__text {
+        display: inline-block;
+        font-size: 18px;
+        line-height: 22px;
+        color: #333333;
+        transition: color 0.3s ease-in-out;
+    }
+    a:hover {
+        color: #2E7F98;
+    }
+}
