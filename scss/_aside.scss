@@ -1,0 +1,110 @@
+.aside {
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    z-index: 2;
+    background-color: var(--color-mercury);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -10000px;
+        right: 203px;
+        bottom: 0;
+        background-color: var(--color-mercury);
+    }
+
+    &__container {
+        max-width: 204px;
+        padding: 0 8px;
+    }
+    &__logo {
+        display: inline-block;
+        margin-bottom: 36px;
+    }
+
+    .aside-menu {
+        &__item {
+            margin-bottom: 16px;
+            &:nth-child(4) {
+                margin-bottom: 24px;
+            }
+        }
+        &__link {
+            display: inline-block;
+            font-size: 18px;
+            line-height: 22px;
+            color: var(--color-black);
+        }
+        &__admin {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background-color: var(--color-lightgray);
+            padding: 12px 0;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -10000px;
+                right: 187px;
+                bottom: 0;
+                background-color: var(--color-lightgray);
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: -8px;
+                bottom: 0;
+                width: 8px;
+                background-color: var(--color-lightgray);
+            }
+        }
+        .admin-logo {
+            margin-right: 10px;
+        }
+    }
+
+    .aside-submenu {
+        margin-top: 16px;
+        margin-left: 16px;
+        margin-bottom: 24px;
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+        }
+        &__link {
+            display: inline-block;
+            font-size: 18px;
+            line-height: 22px;
+            color: var(--color-gray);
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                // font-weight: 700;
+                color: var(--color-lightblue);
+            }
+        }
+        &__link--current {
+            color: var(--color-lightblue);
+        }
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .aside-menu__admin {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -8px;
+            bottom: 0;
+            width: 8px;
+            background-color: var(--color-lightgray);
+        }
+    }
+}
