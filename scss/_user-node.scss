@@ -129,6 +129,9 @@
 .check-info {
     display: flex;
     margin-bottom: 36px;
+    &--statistics {
+        margin-top: 36px;
+    }
     ul:first-child {
         margin-right: 103px;
     }

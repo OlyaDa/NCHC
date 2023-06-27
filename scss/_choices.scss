@@ -95,7 +95,7 @@
 }
 
 // user-node > check
-.check-info {    
+.check-info {
     .choices__inner {
         display: flex;
         align-items: end;
@@ -103,7 +103,7 @@
         font-size: 16px;
         line-height: 20px;
     }
-    
+
     .choices__list--dropdown .choices__item--selectable,
     .choices__list[aria-expanded] .choices__item--selectable {
         font-size: 16px;
@@ -112,7 +112,32 @@
         align-items: center;
         padding: 5px;
     }
-    
+
+    .choices {
+        width: max-content;
+        padding: 0px 26px 0px 0px;
+    }
+}
+
+// user-node > statistics iPv4
+.th-select {
+    .choices__inner {
+        display: flex;
+        align-items: end;
+        min-height: 21px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .choices__list--dropdown .choices__item--selectable,
+    .choices__list[aria-expanded] .choices__item--selectable {
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+    }
+
     .choices {
         width: max-content;
         padding: 0px 26px 0px 0px;
