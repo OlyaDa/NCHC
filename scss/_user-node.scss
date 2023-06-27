@@ -28,6 +28,10 @@
         display: flex;
         align-items: center;
         margin-top: 36px;
+        &--loghistory {
+            margin-top: 24px;
+            margin-bottom: 36px;
+        }
         &__svg {
             display: inline-block;
             width: 20px;
