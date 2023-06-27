@@ -68,7 +68,7 @@
                             </li>
                             <ul class="list-reset aside__submenu aside-submenu">
                                 <li class=" aside-submenu__item">
-                                    <a class="aside-submenu__link aside-submenu__link--current" href="#">用戶-節點</a>
+                                    <a class="aside-submenu__link" href="#">用戶-節點</a>
                                 </li>
                                 <li class=" aside-submenu__item">
                                     <a class="aside-submenu__link" href="#">用戶-網站</a>
@@ -81,7 +81,7 @@
                                 </li>
                             </ul>
                             <li class="aside-menu__item">
-                                <a class="aside-menu__link" href="#">
+                                <a class="aside-menu__link aside-submenu__link--current" href="#">
                                     節點管理
                                 </a>
                             </li>
@@ -123,81 +123,30 @@
                         <!-- USER-NODE -->
                         <section class="user-node user-node--check">
                             <div class="container__admin">
-
                                 <ul class="breadcrumbs list-reset">
-                                    <li class="breadcrumbs__item">量測紀錄</li>
+                                    <li class="breadcrumbs__item">節點管理</li>
                                     <li class="breadcrumbs__item">
-                                        <a class="breadcrumbs__link" href="admin.html">用戶-節點</a>
-                                    </li>
-                                    <li class="breadcrumbs__item">
-                                        <a class="breadcrumbs__link breadcrumbs__link--current" href="admin-statistics-ipv4.html">統計</a>
+                                        <a class="breadcrumbs__link breadcrumbs__link--current" href="#">新增節點</a>
                                     </li>
                                 </ul>
 
-                                <div class="check-info check-info--statistics">
-                                    <ul class="list-reset">
-                                        <li class="check-info__item">
-                                            <h4 class="check-info__caption">Source IPV4</h4>
-                                            <p class="check-info__text">93.170.117.45</p>
-                                        </li>
-                                        <li class="check-info__item">
-                                            <h4 class="check-info__caption">Location</h4>
-                                            <p class="check-info__text">Taiwan/Taipei</p>
-                                        </li>
-                                        <li class="check-info__item">
-                                            <h4 class="check-info__caption">ISP</h4>
-                                            <p class="check-info__text">HiNet</p>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <!-- FORM -->
+                                <form class="form">
+                                    <input class="form__input" type="text" placeholder="名稱" name="username" required>
+                                    <input class="form__input form__input" type="text" placeholder="IPv4" name="username" required>
+                                    <input class="form__input form__input" type="text" placeholder="IPv6" name="username" required>
+                                    <div class="deactivate">
+                                        <input class="form__checkbox" type="checkbox" name="deactivate"> 
+                                        <span class="deactivate-text">停用節點</span>
+                                    </div>
+                                    <div class="buttons">
+                                        <button class="btn btn-managment-empt btn-reset btn--empt">取消</button>
+                                        <button class="btn btn-managment-full btn-reset btn--full">儲存</button>
+                                    </div>
 
-                                <!-- TABLE -->
-                                <table class="table-check">
-                                    <thead>
-                                        <tr>
-                                            <th class="th-select">
-                                                <select name="time" class="check-info__text select">
-                                                    <option value="量測時間">量測時間</option>
-                                                    <option value="量測時間2">量測時間2</option>
-                                                    <option value="量測時間3">量測時間3</option>
-                                                </select>
-                                            </th>
-                                            <th>Server</th>
-                                            <th>持續量測時間 </th>
-                                            <th>同時連線數</th>
-                                            <th colspan="3">網路品質測試</th>
-                                            <th colspan="3">網路傳測試</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><span class="data">2023-05-22</span> <span class="time">16:00</span>
-                                            </td>
-                                            <td>台北1</td>
-                                            <td>5秒</td>
-                                            <td>1</td>
-                                            <td>HTTPing</td>
-                                            <td>RTT</td>
-                                            <td>Packet Loss</td>
-                                            <td>Download</td>
-                                            <td>Upload</td>
-                                            <td>RTT</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="data">2023-05-21</span> <span class="time">13:42</span>
-                                            </td>
-                                            <td>台北1</td>
-                                            <td>10秒</td>
-                                            <td>3</td>
-                                            <td>23</td>
-                                            <td>30</td>
-                                            <td>0.0</td>
-                                            <td>65.7</td>
-                                            <td>66</td>
-                                            <td>24.3</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+
+                                </form>
+
                             </div>
                         </section>
                     </article>
