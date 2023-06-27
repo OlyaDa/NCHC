@@ -999,6 +999,7 @@ a {
   font-size: 21px;
   line-height: 25px;
   color: var(--color-black);
+  margin: 0;
   margin-bottom: 30px;
 }
 
@@ -1009,6 +1010,25 @@ a {
   line-height: 22px;
   color: var(--color-black);
   margin: 0;
+}
+
+.privacy .btn {
+  display: inline-block;
+}
+
+.privacy .btn--privacy {
+  margin-right: 16px;
+}
+
+.privacy-admin {
+  padding: 64px 0;
+}
+
+.privacy-admin .privacy__text {
+  width: 860px;
+  font-size: 21px;
+  line-height: 25px;
+  margin-bottom: 48px;
 }
 
 .instruction {
