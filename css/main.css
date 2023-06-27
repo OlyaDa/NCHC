@@ -108,6 +108,17 @@ main {
   overflow: hidden;
 }
 
+.wrap-holder {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .list-reset {
   list-style: none;
   padding: 0;
@@ -208,7 +219,7 @@ a {
   display: block;
 }
 
-.header__admin .user {
+.header .user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,22 +238,22 @@ a {
   cursor: pointer;
 }
 
-.header__admin .user:hover .user__profile {
+.header .user:hover .user__profile {
   fill: var(--color-lightblue);
 }
 
-.header__admin .user .sub-nav__link {
+.header .user .sub-nav__link {
   display: inline-block;
   min-width: 113px;
   padding: 16px 10px;
   color: var(--color-black);
 }
 
-.header__admin .user .sub-nav__link:hover {
+.header .user .sub-nav__link:hover {
   color: var(--color-lightblue);
 }
 
-.header__admin .user .sub-nav__list {
+.header .user .sub-nav__list {
   display: none;
   top: 70px;
   right: 0;
@@ -257,12 +268,29 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-.header__admin .user__profile {
+.header .user__profile {
   width: 32px;
   height: 32px;
   fill: var(--color-black);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+.header .user--main {
+  width: 28px;
+  height: 28px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.header .user--main svg {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  fill: var(--color-white);
+}
+
+.header .user--main:hover svg {
+  fill: var(--color-gray);
 }
 
 .header__container {
@@ -936,7 +964,6 @@ a {
 }
 
 .contact {
-  height: 100vh;
   padding: 60px 0;
   background-image: url(../images/bg.png);
   background-repeat: no-repeat;
