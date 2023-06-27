@@ -1607,6 +1607,30 @@ a {
   opacity: 0.5;
 }
 
+.form .form__input--edit {
+  cursor: inherit;
+}
+
+.form .form__input--edit::-webkit-input-placeholder {
+  color: var(--color-black);
+  opacity: 1;
+}
+
+.form .form__input--edit:-ms-input-placeholder {
+  color: var(--color-black);
+  opacity: 1;
+}
+
+.form .form__input--edit::-ms-input-placeholder {
+  color: var(--color-black);
+  opacity: 1;
+}
+
+.form .form__input--edit::placeholder {
+  color: var(--color-black);
+  opacity: 1;
+}
+
 .form .deactivate {
   display: -webkit-box;
   display: -ms-flexbox;

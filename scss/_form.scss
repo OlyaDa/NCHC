@@ -20,6 +20,13 @@
             opacity: 0.5;
         }
     }
+    .form__input--edit {
+        cursor: inherit;
+        &::placeholder {
+            color: var(--color-black);
+            opacity: 1;
+        }
+    }
     .deactivate {
         display: flex;
         align-items: center;
