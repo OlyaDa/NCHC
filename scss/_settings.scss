@@ -70,11 +70,6 @@ main {
 
 .wrapper {
     overflow: hidden;
-    // max-width: 1320px;
-    // width: 100%;
-    // padding: 0 15px;
-    // margin: 0 auto;
-    // min-height: 100%;
 }
 .list-reset {
     list-style: none;
@@ -100,6 +95,7 @@ a {
     font-size: 21px;
     line-height: 25px;
     color: var(--color-lightblue);
+    background-color: var(--color-white);
     padding: 10px 24px;
     border: 1px solid var(--color-lightblue);
     border-radius: 6px;

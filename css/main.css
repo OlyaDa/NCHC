@@ -137,6 +137,7 @@ a {
   font-size: 21px;
   line-height: 25px;
   color: var(--color-lightblue);
+  background-color: var(--color-white);
   padding: 10px 24px;
   border: 1px solid var(--color-lightblue);
   border-radius: 6px;
@@ -534,6 +535,38 @@ a {
   margin-left: -5px;
 }
 
+.check-info .choices__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  min-height: 19px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.check-info .choices__list--dropdown .choices__item--selectable,
+.check-info .choices__list[aria-expanded] .choices__item--selectable {
+  font-size: 16px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+}
+
+.check-info .choices {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0px 26px 0px 0px;
+}
+
 .speed-test {
   background-image: url(../images/bg.png);
   background-repeat: no-repeat;
@@ -721,6 +754,10 @@ a {
   width: 60px;
   height: 3px;
   background-color: var(--color-black);
+}
+
+.speed-test .card .hide {
+  display: none;
 }
 
 .speed-test .card__magnitude {
@@ -1250,6 +1287,27 @@ a {
   height: 100vh;
 }
 
+.user-node--check {
+  padding-top: 36px;
+}
+
+.user-node .btn-check {
+  margin-right: 16px;
+}
+
+.user-node__holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin-bottom: 30px;
+}
+
 .user-node__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1263,57 +1321,29 @@ a {
   margin-bottom: 24px;
 }
 
-.user-node .info {
+.user-node .user-node-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 36px;
 }
 
-.user-node .info__svg {
+.user-node .user-node-info__svg {
   display: inline-block;
   width: 20px;
   height: 20px;
   fill: var(--color-lightblue);
 }
 
-.user-node .info__text {
+.user-node .user-node-info__text {
   display: inline-block;
   font-size: 18px;
   line-height: 22px;
   color: var(--color-black);
   margin-left: 8px;
-}
-
-.user-node .breadcrumbs {
-  margin-bottom: 36px;
-}
-
-.user-node .breadcrumbs__item {
-  display: inline-block;
-  font-size: 18px;
-  line-height: 22px;
-  color: rgba(51, 51, 51, 0.5);
-}
-
-.user-node .breadcrumbs__item:first-child::after {
-  content: ">";
-  font-size: 18px;
-  line-height: 22px;
-  color: rgba(51, 51, 51, 0.5);
-  margin: 0 8px;
-}
-
-.user-node .breadcrumbs__link {
-  font-size: 18px;
-  line-height: 22px;
-  color: rgba(51, 51, 51, 0.5);
-}
-
-.user-node .breadcrumbs__link--current {
-  color: var(--color-lightblue);
 }
 
 .user-node table {
@@ -1382,6 +1412,74 @@ a {
           align-items: center;
   height: 16px;
   width: 16px;
+}
+
+.breadcrumbs__item {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  content: ">";
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(51, 51, 51, 0.5);
+  margin: 0 8px;
+}
+
+.breadcrumbs__link {
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.breadcrumbs__link--current {
+  color: var(--color-lightblue);
+}
+
+.check-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 36px;
+}
+
+.check-info ul:first-child {
+  margin-right: 103px;
+}
+
+.check-info__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.check-info__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.check-info__caption {
+  display: inline-block;
+  color: var(--color-gray);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  margin-right: 14px;
+}
+
+.check-info__text {
+  display: inline-block;
+  color: var(--color-black);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
 }
 
 .footer {

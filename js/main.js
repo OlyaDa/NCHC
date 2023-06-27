@@ -8,21 +8,18 @@ selects.forEach(el => {
     });
 });
 
-    function toggleCheckboxes() {
+//checkbox
+function toggleCheckboxes() {
     var allCheckbox = document.getElementById("all");
     var secondCheckbox = document.getElementById("secondCheck");
     var thirdCheckbox = document.getElementById("thirdCheck");
 
     if (allCheckbox.checked) {
         secondCheckbox.checked = true;
-    thirdCheckbox.checked = true;
-    // secondCheckbox.disabled = false;
-    // thirdCheckbox.disabled = false;
+        thirdCheckbox.checked = true;
     } else {
         secondCheckbox.checked = false;
-    thirdCheckbox.checked = false;
-    // secondCheckbox.disabled = true;
-    // thirdCheckbox.disabled = true;
+        thirdCheckbox.checked = false;
     }
-  }
+}
 

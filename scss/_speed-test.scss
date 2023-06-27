@@ -137,6 +137,9 @@
             height: 3px;
             background-color: var(--color-black);
         }
+        .hide {
+            display: none;
+        }
         &__magnitude {
             font-size: 18px;
             line-height: 22px;
