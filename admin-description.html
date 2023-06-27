@@ -81,7 +81,7 @@
                                 </li>
                             </ul>
                             <li class="aside-menu__item">
-                                <a class="aside-menu__link aside-submenu__link--current" href="#">
+                                <a class="aside-menu__link" href="#">
                                     節點管理
                                 </a>
                             </li>
@@ -92,7 +92,7 @@
                             </li>
                             <ul class="list-reset aside__submenu aside-submenu">
                                 <li class=" aside-submenu__item">
-                                    <a class="aside-submenu__link" href="#">量測說明</a>
+                                    <a class="aside-submenu__link aside-submenu__link--current" href="#">量測說明</a>
                                 </li>
                                 <li class=" aside-submenu__item">
                                     <a class="aside-submenu__link" href="#">聯絡資訊</a>
@@ -121,32 +121,41 @@
                     <!--.......................ARTICLE PAGE.......................-->
                     <article class="article">
                         <!-- USER-NODE -->
-                        <section class="user-node user-node--check">
+                        <section class="user-node user-node--descr">
                             <div class="container__admin">
                                 <ul class="breadcrumbs list-reset">
-                                    <li class="breadcrumbs__item">節點管理</li>
+                                    <li class="breadcrumbs__item">頁面設定</li>
                                     <li class="breadcrumbs__item">
-                                        <a class="breadcrumbs__link breadcrumbs__link--current" href="#">新增節點</a>
+                                        <a class="breadcrumbs__link breadcrumbs__link--current" href="#">量測說明</a>
                                     </li>
                                 </ul>
-
-                                <!-- FORM -->
-                                <form class="form">
-                                    <input class="form__input" type="text" placeholder="名稱" name="username" required>
-                                    <input class="form__input form__input" type="text" placeholder="IPv4" name="username" required>
-                                    <input class="form__input form__input" type="text" placeholder="IPv6" name="username" required>
-                                    <div class="deactivate">
-                                        <input class="form__checkbox" type="checkbox" name="deactivate"> 
-                                        <span class="deactivate-text">停用節點</span>
-                                    </div>
-                                    <div class="buttons">
-                                        <button class="btn btn-managment-empt btn-reset btn--empt">取消</button>
-                                        <button class="btn btn-managment-full btn-reset btn--full">儲存</button>
-                                    </div>
-
-
-                                </form>
-
+                                <div class="descr">
+                                    <div class="descr__info">
+                                        <h4 class="descr__title">優化測試說明</h4>
+                                        <button class="btn-reset btn btn--empt">預覽</button>
+                                    </div>            
+                                    <div class="descr__textarea"></div>
+                                </div>
+                                <div class="descr">
+                                    <div class="descr__info">
+                                        <h4 class="descr__title">Traceroute 方式說明</h4>
+                                        <button class="btn-reset btn btn--empt">預覽</button>
+                                    </div>            
+                                    <div class="descr__textarea"></div>
+                                </div>
+                                <div class="descr">
+                                    <div class="descr__info">
+                                        <h4 class="descr__title">一般量測說明</h4>                                        </h4>
+                                        <button class="btn-reset btn btn--empt">預覽</button>
+                                    </div>            
+                                    <div class="descr__textarea"></div>
+                                </div>
+                                <div class="descr">
+                                    <div class="descr__info">
+                                        <h4 class="descr__title">網路速度量測(用戶-節點)說明</h4>                                        </h4>
+                                        <button class="btn-reset btn btn--empt">預覽</button>
+                                    </div>            
+                                </div>
                             </div>
                         </section>
                     </article>

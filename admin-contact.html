@@ -81,7 +81,7 @@
                                 </li>
                             </ul>
                             <li class="aside-menu__item">
-                                <a class="aside-menu__link aside-submenu__link--current" href="#">
+                                <a class="aside-menu__link" href="#">
                                     節點管理
                                 </a>
                             </li>
@@ -95,7 +95,7 @@
                                     <a class="aside-submenu__link" href="#">量測說明</a>
                                 </li>
                                 <li class=" aside-submenu__item">
-                                    <a class="aside-submenu__link" href="#">聯絡資訊</a>
+                                    <a class="aside-submenu__link aside-submenu__link--current" href="#">聯絡資訊</a>
                                 </li>
                                 <li class=" aside-submenu__item">
                                     <a class="aside-submenu__link" href="#">隱私政策</a>
@@ -121,58 +121,26 @@
                     <!--.......................ARTICLE PAGE.......................-->
                     <article class="article">
                         <!-- USER-NODE -->
-                        <section class="user-node user-node--check">
+                        <section class="user-node user-node--check user-node--descr">
                             <div class="container__admin">
-                                <div class="user-node__holder">
-                                    <ul class="breadcrumbs list-reset">
-                                        <li class="breadcrumbs__item">
-                                            <a class="breadcrumbs__link breadcrumbs__link--current" href="#">量測說明</a>
-                                        </li>
-                                    </ul>
-                                    <div class="buttons">
-                                        <a href="admin-management-add-new.html" class="btn-reset btn-managment btn--empt">新增</a>
-                                    </div>
-                                </div>
+                                <ul class="breadcrumbs list-reset">
+                                    <li class="breadcrumbs__item">頁面設定</li>
+                                    <li class="breadcrumbs__item">
+                                        <a class="breadcrumbs__link breadcrumbs__link--current" href="#">聯絡資訊</a>
+                                    </li>
+                                </ul>
 
-                                <!-- TABLE -->
-                                <table class="table-check">
-                                    <thead>
-                                        <tr>
-                                            <th>名稱</th>
-                                            <th>IPv4</th>
-                                            <th>IPv6</th>
-                                            <th>狀態</th>
-                                            <th>建立時間</th>
-                                            <th>操作</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>台北1</td>
-                                            <td>140.15.23.111</td>
-                                            <td>2001:db8:0:1:1:1:1:1</td>
-                                            <td>啟用</td>
-                                            <td><span class="data">2023-05-22</span> <span class="time">07:00:01</span>
-                                            </td>
-                                            <td>
-                                                <button class="table-link btn-reset">[編輯]</button>
-                                                <button class="table-link btn-reset">[刪除]</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>高雄1</td>
-                                            <td>163.25.6.1</td>
-                                            <td>2001:0425:2CA1:0000:0000:0567:5673:23b5</td>
-                                            <td>啟用</td>
-                                            <td><span class="data">2023-05-22</span> <span class="time">08:00:01</span>
-                                            </td>
-                                            <td>
-                                                <button class="table-link btn-reset">[編輯]</button>
-                                                <button class="table-link btn-reset">[刪除]</button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <!-- FORM -->
+                                <form class="form">
+                                    <input class="form__input" type="text" placeholder="聯絡人" name="username">
+                                    <input class="form__input form__input" type="tel" placeholder="電話" name="phone" required>
+                                    <input class="form__input form__input" type="text" placeholder="Email" name="email" required>
+                                    <div class="buttons buttons--contact">
+                                        <button class="btn btn-managment-empt btn-reset btn--empt">取消</button>
+                                        <button class="btn btn-managment-full btn-reset btn--full">儲存</button>
+                                    </div>
+                                </form>
+
                             </div>
                         </section>
                     </article>

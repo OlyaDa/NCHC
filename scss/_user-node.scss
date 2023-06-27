@@ -1,8 +1,11 @@
 .user-node {
     padding-top: 52px;
-    height: 100vh;
+    min-height: 100vh;
     &--check {
         padding-top: 36px;
+    }
+    &--descr {
+        padding-top: 52px;
     }
     .btn-check {
         margin-right: 16px;

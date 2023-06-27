@@ -1334,11 +1334,15 @@ a {
 
 .user-node {
   padding-top: 52px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .user-node--check {
   padding-top: 36px;
+}
+
+.user-node--descr {
+  padding-top: 52px;
 }
 
 .user-node .btn-check {
@@ -1617,12 +1621,48 @@ a {
           justify-content: space-between;
 }
 
+.form .buttons--contact {
+  margin-top: 7px;
+}
+
 .form .btn-managment-empt {
   width: 196px;
 }
 
 .form .btn-managment-full {
   width: 244px;
+}
+
+.descr {
+  margin-top: 36px;
+}
+
+.descr__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+.descr__title {
+  margin: 0;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  color: var(--color-black);
+  margin-right: 16px;
+}
+
+.descr__textarea {
+  border: none;
+  width: 100%;
+  height: 178px;
+  border-radius: 6px;
+  background: var(--color-lightgray);
 }
 
 .footer {
