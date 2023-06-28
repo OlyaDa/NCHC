@@ -67,25 +67,26 @@
         <main>
             <!--.......................SPEED-TEST.......................-->
             <section class="speed-test">
-                <div class="container speed-test__container">
+                <div class="container">
+                    <div class="speed-test__holder">
                     <div class="speed-test__info info">
                         <div class="info__title">
-                            <h4 class="info__caption">來源 IPv4</h4>
-                            <h4 class="info__caption">來源 IPv6</h4>
-                            <h4 class="info__caption">位置</h4>
+                            <h4 class="info__caption">Source IPv4</h4>
+                            <h4 class="info__caption">Source IPv6</h4>
+                            <h4 class="info__caption">Location</h4>
                             <h4 class="info__caption">ISP</h4>
-                            <h4 class="info__caption">量測日期</h4>
-                            <h4 class="info__caption">量測方式</h4>
-                            <h4 class="info__caption">待測網址或 IP</h4>
-                            <h4 class="info__caption">持續量測時間</h4>
-                            <h4 class="info__caption">同時連線數</h4>
+                            <h4 class="info__caption info__caption--date">Date</h4>
+                            <h4 class="info__caption"> Measurement Type</h4>
+                            <h4 class="info__caption"> Target URL or IP</h4>
+                            <h4 class="info__caption">Test Duration</h4>
+                            <h4 class="info__caption">Parallel Streams</h4>
                         </div>
                         <div class="info__desc">
                             <p class="info__text">93.170.117.45</p>
                             <p class="info__text">None</p>
                             <p class="info__text">Taiwan/Taipei</p>
                             <p class="info__text">HiNet</p>
-                            <p class="info__text">2023/05/22</p>
+                            <p class="info__text info__text--date">2023/05/22</p>
                             <div class="select-metering info__text">
                                 <select name="select-metering" class="info__text select">
                                     <option value="用戶 - 測試伺服器">用戶 - 測試伺服器</option>
@@ -93,7 +94,7 @@
                                     <option value="用戶 - 測試伺服器">用戶 - 測試伺服器</option>
                                 </select>
                             </div>
-                            <p class="info__text info__text--frame">IP 172.217.160.100</p>
+                            <p class="info__text info__text--frame">IP&nbsp;172.217.160.100</p>
                             <div class="select-time info__text">
                                 <select name="select-time" class="info__text select">
                                     <option value="5秒">5秒</option>
@@ -289,12 +290,12 @@
                             <path id="tick-160" class="svg-tick" d="M485.277 397.666L462.932 384.764" stroke="#2E7F98"
                                 stroke-width="3.03562" stroke-linecap="round" />
                         </svg>
+                        <button id="start-btn" class="btn-reset speed-test__btn">
+                            <span id="span-start-btn" class="start-btn">開始</span>
+                            <span id="span-measuring-btn" class="measuring-btn hide">量测中</span>
+                        </button>
                     </div>
-
-                    <button id="start-btn" class="btn-reset speed-test__btn">
-                        <span id="span-start-btn" class="start-btn">開始</span>
-                        <span id="span-measuring-btn" class="measuring-btn hide">量测中</span>
-                    </button>
+                </div>
 
                     <h3 class="speed-test__caption">線路品質測試</h3>
                     <div class="speed-test__cards">

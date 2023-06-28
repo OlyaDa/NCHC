@@ -653,6 +653,18 @@ a {
   padding: 74px 0 120px 0;
 }
 
+.speed-test__holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .speed-test__container {
   max-width: 666px;
   padding: 0 15px;
@@ -724,6 +736,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 80px;
+  width: auto;
 }
 
 .speed-test .info__title {
@@ -749,6 +762,10 @@ a {
 
 .speed-test .info__caption:not(:last-child) {
   margin-bottom: 24px;
+}
+
+.speed-test .info .info__caption--date {
+  margin-bottom: 50px;
 }
 
 .speed-test .info__desc {
@@ -794,6 +811,10 @@ a {
 
 .speed-test .info__text:not(:last-child) {
   margin-bottom: 24px;
+}
+
+.speed-test .info .info__text--date {
+  margin-bottom: 50px;
 }
 
 .speed-test .card {
@@ -884,6 +905,7 @@ a {
   border-radius: 6px;
   padding: 42px 36px;
   margin-top: 100px;
+  margin: 100px auto 0 auto;
 }
 
 .speed-test .descr__title {

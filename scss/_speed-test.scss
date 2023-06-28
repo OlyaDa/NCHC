@@ -4,6 +4,11 @@
     background-size: 100%;
     text-align: center;
     padding: 74px 0 120px 0;
+    &__holder {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
     &__container {
         max-width: 666px;
         padding: 0 15px;
@@ -59,6 +64,8 @@
         display: flex;
         justify-content: center;
         margin-bottom: 80px;
+        width: auto;
+        // margin-right: 20px;    
         &__title {
             display: flex;
             flex-direction: column;
@@ -75,6 +82,9 @@
             &:not(:last-child) {
                 margin-bottom: 24px;
             }
+        }
+        .info__caption--date {
+            margin-bottom: 50px;
         }
         &__desc {
             display: flex;
@@ -109,6 +119,9 @@
             &:not(:last-child) {
                 margin-bottom: 24px;
             }
+        }
+        .info__text--date {
+            margin-bottom: 50px;
         }
     }
 
@@ -182,6 +195,7 @@
         border-radius: 6px;
         padding: 42px 36px;
         margin-top: 100px;
+        margin: 100px auto 0 auto;
         &__title {
             font-weight: 700;
             font-size: 21px;
