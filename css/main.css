@@ -183,12 +183,13 @@ a {
   background-color: var(--color-black);
   -webkit-box-shadow: 0px 0px 36px rgba(103, 105, 117, 0.24);
           box-shadow: 0px 0px 36px rgba(103, 105, 117, 0.24);
-  padding: 16px 0;
+  padding: 16px 0 0 0;
 }
 
 .header__admin {
   position: relative;
   padding-top: 12px;
+  padding-bottom: 12px;
   position: relative;
   min-height: 82px;
   background-color: var(--color-white);
@@ -365,7 +366,7 @@ a {
 .header .nav-bottom .sub-nav__list {
   display: none;
   position: absolute;
-  background: var(--color-darkblack);
+  background: #347F97;
   -webkit-box-shadow: 0px 0px 36px rgba(103, 105, 117, 0.24);
           box-shadow: 0px 0px 36px rgba(103, 105, 117, 0.24);
   border-radius: 4px;
