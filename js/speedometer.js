@@ -7,16 +7,34 @@ let tickDiff = 0;
 let tickDiffValue = 0;
 let startTime = 0;
 let isRunning = false;
+let degrees = 0;
+
+const frameCenterElement = document.querySelector('.frame-center');
 
 function valBetween(value, min, max) {
   return Math.min(max, Math.max(min, value));
 }
 
+function speedToScale(mpbs) {
+  return valBetween(Math.ceil((value / 160) * 49), 1, 49);
+}
+
+function scaleToSpeed(tick) {
+  return 160 / 49 * tick;
+}
+
+function speedToDegrees(mpbs) {
+  return mpbs * 1.5 + 60;
+}
+
 function loop() {
   value = Math.random() * 160;
-  tick = valBetween(Math.ceil((value / 160) * 49), 1, 49);
+  degrees = speedToDegrees(value);
+
+  tick = speedToScale(value);
   tickDiff = Math.abs(tick - tickStore);
   tickDiffValue = Math.abs(value - valueStore) / tickDiff;
+  console.log("degrees: " + degrees);
   console.log("value: " + value);
   console.log("tick: " + tick);
   console.log("tickDiff: " + tickDiffValue + " * " + tickDiff + " = " + (tickDiffValue * tickDiff));
@@ -24,11 +42,14 @@ function loop() {
   let counter = 0;
   const valueStoreTemp = valueStore;
   const tickStoreTemp = tickStore;
+  let iDegrees = 0;
 
   if (value > valueStore) {
     for (let i = tickStoreTemp; i <= tick; i++) {
       setTimeout(() => {
         document.querySelector('#speedometer path:nth-child(' + i + ')').classList.add("color");
+        iDegrees = speedToDegrees (scaleToSpeed(i));
+        frameCenterElement.style.transform = `rotate(${iDegrees}deg)`;
         const labelValue = Math.abs(valueStoreTemp + (tickDiffValue * Math.abs(tickStoreTemp - i)));
         document.querySelector('#speedometer-label').textContent = labelValue.toFixed(2);
         if (i === tick) {
@@ -41,6 +62,8 @@ function loop() {
     for (let i = tickStoreTemp; i >= tick; i--) {
       setTimeout(() => {
         document.querySelector('#speedometer path:nth-child(' + i + ')').classList.remove("color");
+        iDegrees = speedToDegrees (scaleToSpeed(i));
+        frameCenterElement.style.transform = `rotate(${iDegrees}deg)`;
         const labelValue = Math.abs(valueStoreTemp - (tickDiffValue * Math.abs(tickStoreTemp - i)));
         document.querySelector('#speedometer-label').textContent = labelValue.toFixed(2);
         if (i === tick) {

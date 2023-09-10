@@ -1,27 +1,27 @@
 function showSpeedometerValues() {
   var valueElements = document.getElementsByClassName('speedometer-holder');
-  var arrowElements = document.getElementsByClassName('speedometer-arrow');
+  // var arrowElements = document.getElementsByClassName('speedometer-arrow');
 
   for (var i = 0; i < valueElements.length; i++) {
     valueElements[i].classList.remove('hide');
   }
 
-  for (var j = 0; j < arrowElements.length; j++) {
-    arrowElements[j].classList.add('hide');
-  }
+  // for (var j = 0; j < arrowElements.length; j++) {
+  //   arrowElements[j].classList.add('hide');
+  // }
 }
 
 function revertSpeedometerValues() {
   var valueElements = document.getElementsByClassName('speedometer-holder');
-  var arrowElements = document.getElementsByClassName('speedometer-arrow');
+  // var arrowElements = document.getElementsByClassName('speedometer-arrow');
 
   for (var i = 0; i < valueElements.length; i++) {
     valueElements[i].classList.add('hide');
   }
 
-  for (var j = 0; j < arrowElements.length; j++) {
-    arrowElements[j].classList.remove('hide');
-  }
+  // for (var j = 0; j < arrowElements.length; j++) {
+  //   arrowElements[j].classList.remove('hide');
+  // }
 }
 
 document.addEventListener('DOMContentLoaded', function() {

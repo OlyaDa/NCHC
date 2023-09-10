@@ -21,11 +21,22 @@
         color: var(--color-lightblue);
         padding: 5px;
         transition: all 0.3s ease-in-out;
-        margin-bottom: 51px;
+        // margin-bottom: 51px;
+        margin-bottom: 24px;
         &:hover {
             color: var(--color-blue);
         }
     }
+}
+
+.frame-center {
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: -9px;
+    top: 264px;
+    transform-origin: 20px 20px 0;
+    transform: rotate(60deg);
 }
 
 .color {
@@ -42,4 +53,8 @@
 }
 .hide {
     display: none;
+}
+
+.speedometer-holder {
+    margin-top: 108px;
 }

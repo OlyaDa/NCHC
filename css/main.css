@@ -837,6 +837,12 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.speed-test .card:hover {
+  background: #dedede;
 }
 
 .speed-test .card:not(:last-child) {
@@ -931,6 +937,10 @@ a {
   margin-bottom: 25px;
 }
 
+.speed-test__btn-reset {
+  margin-top: 0;
+}
+
 .speedometer {
   position: relative;
 }
@@ -959,11 +969,23 @@ a {
   padding: 5px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  margin-bottom: 51px;
+  margin-bottom: 24px;
 }
 
 .speedometer__btn:hover {
   color: var(--color-blue);
+}
+
+.frame-center {
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: -9px;
+  top: 264px;
+  -webkit-transform-origin: 20px 20px 0;
+          transform-origin: 20px 20px 0;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
 }
 
 .color {
@@ -984,6 +1006,10 @@ a {
 
 .hide {
   display: none;
+}
+
+.speedometer-holder {
+  margin-top: 108px;
 }
 
 .contact {

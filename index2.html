@@ -120,6 +120,7 @@
                         </div>
 
                         <div class="speedometer">
+                            <img src="images/arrowspeed.png" alt="" class="frame-center">
                             <!-- svg panel without ticks -->
                             <svg class="speedometer-panel" width="554" height="428" viewBox="0 0 554 428" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -167,9 +168,9 @@
                                         d="M515.003 415.869C515.693 416.271 516.579 416.038 516.978 415.346C541.177 373.371 553.946 325.773 554 277.305C554.054 228.354 541.135 180.264 516.559 137.929C491.982 95.5952 456.627 60.5297 414.092 36.3033C371.556 12.0768 323.361 -0.44523 274.412 0.0120887C225.464 0.469407 177.51 13.8898 135.435 38.9067C93.36 63.9237 58.6657 99.6436 34.8847 142.43C11.1038 185.216 -0.914252 233.539 0.0542185 282.48C1.01315 330.939 14.6701 378.29 39.649 419.806C40.0608 420.49 40.9511 420.707 41.6333 420.292V420.292C42.3155 419.876 42.5312 418.986 42.1195 418.302C17.4063 377.222 3.89468 330.371 2.94586 282.423C1.98751 233.993 13.8801 186.174 37.4127 143.835C60.9453 101.495 95.2774 66.1484 136.913 41.3927C178.549 16.637 226.002 3.35672 274.439 2.90417C322.877 2.45163 370.569 14.843 412.66 38.8164C454.751 62.7899 489.738 97.4893 514.057 139.381C538.377 181.274 551.161 228.862 551.108 277.302C551.055 325.259 538.421 372.354 514.48 413.889C514.081 414.581 514.313 415.466 515.003 415.869V415.869Z"
                                         stroke="#2E7F98" stroke-width="3.03562" mask="url(#path-11-inside-2_3_139)" />
                                 </g>
-                                <circle class="speedometer-arrow" cx="278.5" cy="276.5" r="14.5" stroke="#2E7F98"
+                                <circle class="speedometer-arrow" style="display: none;" cx="278.5" cy="276.5" r="14.5" stroke="#2E7F98"
                                     stroke-width="8" />
-                                <path class="speedometer-arrow" d="M263 281L186 330" stroke="#2E7F98" stroke-width="8"
+                                <path class="speedometer-arrow" style="display: none;" d="M263 281L186 330" stroke="#2E7F98" stroke-width="8"
                                     stroke-linecap="round" />
                             </svg>
                             <div class="speedometer-holder hide">
@@ -296,7 +297,8 @@
                                 <path id="tick-160" class="svg-tick" d="M485.277 397.666L462.932 384.764"
                                     stroke="#2E7F98" stroke-width="3.03562" stroke-linecap="round" />
                             </svg>
-                            <button id="start-btn" class="btn-reset speed-test__btn">
+
+                            <button id="start-btn" class="btn-reset speed-test__btn speed-test__btn-reset">
                                 <span id="span-start-btn" class="start-btn">開始</span>
                                 <span id="span-measuring-btn" class="measuring-btn hide">量测中</span>
                             </button>
