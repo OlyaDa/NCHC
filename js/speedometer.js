@@ -16,7 +16,7 @@ function valBetween(value, min, max) {
 }
 
 function speedToScale(mpbs) {
-  return valBetween(Math.ceil((value / 160) * 49), 1, 49);
+  return valBetween(Math.ceil((value / 1000) * 49), 1, 49);
 }
 
 function scaleToSpeed(tick) {
@@ -28,7 +28,7 @@ function speedToDegrees(mpbs) {
 }
 
 function loop() {
-  value = Math.random() * 160;
+  value = Math.random() * 1000;
   degrees = speedToDegrees(value);
 
   tick = speedToScale(value);
