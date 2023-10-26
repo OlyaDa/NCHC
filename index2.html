@@ -70,24 +70,37 @@
                 <div class="container">
                     <div class="speed-test__holder">
                         <div class="speed-test__info info">
-                            <div class="info__title">
+                            <div class="info__inner">
                                 <h4 class="info__caption">Source IPv4</h4>
-                                <h4 class="info__caption"> IPv6 -> Source IPv6</h4>
-                                <h4 class="info__caption">Location</h4>
-                                <h4 class="info__caption">ISP</h4>
-                                <h4 class="info__caption info__caption--date">Date</h4>
-                                <h4 class="info__caption">Server Location</h4>
-                                <h4 class="info__caption">Measurement Type</h4>
-                                <h4 class="info__caption">Test Duration</h4>
-                                <h4 class="info__caption">Parallel Streams</h4>
-                            </div>
-                            <div class="info__desc">
                                 <p class="info__text">93.170.117.45</p>
+                            </div>
+                            <div class="info__inner">
+                                <h4 class="info__caption"> IPv6 -> Source IPv6</h4>
                                 <p class="info__text">None</p>
+                            </div>
+                            <div class="info__inner">
+                                <h4 class="info__caption">Location</h4>
                                 <p class="info__text">Taiwan/Taipei</p>
+                            </div>
+                            <div class="info__inner">
+                                <h4 class="info__caption">ISP</h4>
                                 <p class="info__text">HiNet</p>
+                            </div>
+                            <div class="info__inner">
+                                <h4 class="info__caption info__caption--date">Date</h4>
                                 <p class="info__text info__text--date">2023/05/22</p>
-
+                            </div>
+                            <div class="info__inner">
+                                <h4 class="info__caption">Measurement Type</h4>
+                                <div class="select-metering info__text">
+                                    <select name="select-metering" class="info__text select">
+                                        <option value="User - Server">User - Test Server</option>
+                                        <option value="User - Website">User - Website</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="info__inner">
+                                <h4 class="info__caption">Server Location</h4>
                                 <div class="select-test info__text">
                                     <select name="select-test" class="info__text select">
                                         <option value="台北1">台北1</option>
@@ -95,20 +108,19 @@
                                         <option value="台北3">台北3</option>
                                     </select>
                                 </div>
-                                <div class="select-metering info__text">
-                                    <select name="select-metering" class="info__text select">
-                                        <option value="用戶 - 測試伺服器">用戶 - 測試伺服器</option>
-                                        <option value="用戶 - 測試伺服器">用戶 - 測試伺服器</option>
-                                        <option value="用戶 - 測試伺服器">用戶 - 測試伺服器</option>
-                                    </select>
-                                </div>
+                            </div>
+                            <div class="info__inner">
+                                <h4 class="info__caption">Test Duration</h4>
                                 <div class="select-time info__text">
                                     <select name="select-time" class="info__text select">
-                                        <option value="5秒">5秒</option>
-                                        <option value="6秒">6秒</option>
-                                        <option value="7秒">7秒</option>
+                                        <option value="5秒">5 seconds</option>
+                                        <option value="6秒">6 seconds</option>
+                                        <option value="7秒">7 seconds</option>
                                     </select>
                                 </div>
+                            </div>
+                            <div class="info__inner">
+                                <h4 class="info__caption">Parallel Streams</h4>
                                 <div class="select-conection info__text">
                                     <select name="select-conection" class="info__text select">
                                         <option value="3">3</option>

@@ -70,41 +70,58 @@
                 <div class="container">
                     <div class="speed-test__holder">
                         <div class="speed-test__info info">
-                            <div class="info__title">
+                            <div class="info__inner">
                                 <h4 class="info__caption">Source IPv4</h4>
-                                <h4 class="info__caption">Source IPv6</h4>
-                                <h4 class="info__caption">Location</h4>
-                                <h4 class="info__caption">ISP</h4>
-                                <h4 class="info__caption info__caption--date">Date</h4>
-
-                                <h4 class="info__caption">Measurement Type</h4>
-                                <h4 class="info__caption">Server Location</h4>
-                                <h4 class="info__caption">Target URL or IP</h4>
-                                <h4 class="info__caption">Test Duration</h4>
-                                <h4 class="info__caption">Parallel Streams</h4>
-                                <h4 class="info__caption">Test Count</h4>
-                            </div>
-                            <div class="info__desc">
                                 <p class="info__text">93.170.117.45</p>
+                            </div>
+                            <div class="info__inner">
+                                <h4 class="info__caption">Source IPv6</h4>
                                 <p class="info__text">None</p>
+                            </div>
+                            <div class="info__inner">
+                                <h4 class="info__caption"> Location</h4>
                                 <p class="info__text">Taiwan/Taipei</p>
+                            </div>
+                            <div class="info__inner">
+                                <h4 class="info__caption">ISP</h4>
                                 <p class="info__text">HiNet</p>
+                            </div>
+                            <div class="info__inner">
+                                <h4 class="info__caption info__caption--date">Date</h4>
                                 <p class="info__text info__text--date">2023/05/22</p>
+                            </div>
+                            <div class="info__inner">
+                                <h4 class="info__caption"> Measurement Type</h4>
                                 <div class="select-metering select-metering--self-filled info__text">
                                     <select name="select-metering" class="info__text select">
-                                        <option value="測試伺服器 - 自填網站">測試伺服器 - 自填網站</option>
-                                        <option value="測試伺服器 - 自填網站">測試伺服器 - 自填網站</option>
-                                        <option value="測試伺服器 - 自填網站">測試伺服器 - 自填網站</option>
+                                        <option value="測試伺服器 - 自填網站">Server - WebSite</option>
+                                        <option value="測試伺服器 - 自填網站">Server - WebSite</option>
+                                        <option value="測試伺服器 - 自填網站">Server - WebSite</option>
                                     </select>
                                 </div>
-                                <div class="select-test info__text">
-                                    <select name="select-test" class="info__text select">
+                            </div>
+                            <div class="info__inner">
+                                <h4 class="info__caption">Source</h4>
+                                <div class="select-start info__text">
+                                    <select name="select-start" class="info__text select">
                                         <option value="台北1">台北1</option>
                                         <option value="台北2">台北2</option>
                                         <option value="台北3">台北3</option>
                                     </select>
                                 </div>
-                                <p class="info__text info__text--frame">IP&nbsp;172.217.160.100</p>
+                            </div>
+                            <div class="info__inner">
+                                <h4 class="info__caption">Destination</h4>
+                                <div class="select-end info__text">
+                                    <select name="select-end" class="info__text select">
+                                        <option value="高雄1">高雄1</option>
+                                        <option value="高雄2">高雄2</option>
+                                        <option value="高雄3">高雄3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="info__inner">
+                                <h4 class="info__caption">Test Duration</h4>
                                 <div class="select-time info__text">
                                     <select name="select-time" class="info__text select">
                                         <option value="5秒">5秒</option>
@@ -112,13 +129,19 @@
                                         <option value="7秒">7秒</option>
                                     </select>
                                 </div>
+                            </div>
+                            <div class="info__inner">
+                                <h4 class="info__caption">Parallel Streams</h4>
                                 <div class="select-conection info__text">
-                                    <select name="select-conection" class="info__text select">
+                                    <select name="select-name" class="info__text select">
                                         <option value="3">3</option>
                                         <option value="6">6</option>
                                         <option value="8">8</option>
                                     </select>
                                 </div>
+                            </div>
+                            <div class="info__inner">
+                                <h4 class="info__caption">Test Count</h4>
                                 <p class="info__text">60 bytes packets</p>
                             </div>
                         </div>
@@ -172,10 +195,10 @@
                                         d="M515.003 415.869C515.693 416.271 516.579 416.038 516.978 415.346C541.177 373.371 553.946 325.773 554 277.305C554.054 228.354 541.135 180.264 516.559 137.929C491.982 95.5952 456.627 60.5297 414.092 36.3033C371.556 12.0768 323.361 -0.44523 274.412 0.0120887C225.464 0.469407 177.51 13.8898 135.435 38.9067C93.36 63.9237 58.6657 99.6436 34.8847 142.43C11.1038 185.216 -0.914252 233.539 0.0542185 282.48C1.01315 330.939 14.6701 378.29 39.649 419.806C40.0608 420.49 40.9511 420.707 41.6333 420.292V420.292C42.3155 419.876 42.5312 418.986 42.1195 418.302C17.4063 377.222 3.89468 330.371 2.94586 282.423C1.98751 233.993 13.8801 186.174 37.4127 143.835C60.9453 101.495 95.2774 66.1484 136.913 41.3927C178.549 16.637 226.002 3.35672 274.439 2.90417C322.877 2.45163 370.569 14.843 412.66 38.8164C454.751 62.7899 489.738 97.4893 514.057 139.381C538.377 181.274 551.161 228.862 551.108 277.302C551.055 325.259 538.421 372.354 514.48 413.889C514.081 414.581 514.313 415.466 515.003 415.869V415.869Z"
                                         stroke="#2E7F98" stroke-width="3.03562" mask="url(#path-11-inside-2_3_139)" />
                                 </g>
-                                <circle class="speedometer-arrow" style="display: none;" cx="278.5" cy="276.5" r="14.5" stroke="#2E7F98"
-                                    stroke-width="8" />
-                                <path class="speedometer-arrow" style="display: none;" d="M263 281L186 330" stroke="#2E7F98" stroke-width="8"
-                                    stroke-linecap="round" />
+                                <circle class="speedometer-arrow" style="display: none;" cx="278.5" cy="276.5" r="14.5"
+                                    stroke="#2E7F98" stroke-width="8" />
+                                <path class="speedometer-arrow" style="display: none;" d="M263 281L186 330"
+                                    stroke="#2E7F98" stroke-width="8" stroke-linecap="round" />
                             </svg>
                             <div class="speedometer-holder hide">
                                 <div id="speedometer-label" class="speedometer__value">0</div>

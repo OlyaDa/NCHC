@@ -730,14 +730,17 @@ a {
 }
 
 .speed-test .info {
+  width: 32%;
+  margin-bottom: 80px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.speed-test .info__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 80px;
-  width: auto;
+  margin-bottom: 24px;
 }
 
 .speed-test .info__title {
@@ -759,10 +762,8 @@ a {
   font-weight: 400;
   font-size: 21px;
   line-height: 25px;
-}
-
-.speed-test .info__caption:not(:last-child) {
-  margin-bottom: 24px;
+  width: 50%;
+  margin-right: 7px;
 }
 
 .speed-test .info .info__caption--date {
@@ -788,14 +789,12 @@ a {
   margin: 0;
   line-height: 25px;
   color: var(--color-black);
-}
-
-.speed-test .info__text:last-child {
-  margin-left: -5px;
+  width: 50%;
+  margin-left: 7px;
 }
 
 .speed-test .info__text--frame {
-  padding-left: 15px;
+  padding: 0 5px;
 }
 
 .speed-test .info__text--frame::after {
@@ -842,7 +841,11 @@ a {
 }
 
 .speed-test .card:hover {
-  background: #dedede;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .speed-test .card:not(:last-child) {
@@ -941,6 +944,72 @@ a {
   margin-top: 0;
 }
 
+.loading-speedometer {
+  position: absolute;
+  top: 255px;
+  right: 43.8%;
+}
+
+.progress {
+  width: 40%;
+  position: absolute;
+  top: 349px;
+  left: 167px;
+}
+
+.progress-bg {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 20px;
+  background-color: #d9e4e9;
+  border-radius: 10px;
+}
+
+.progress-done {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2FBCD3;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #2e7f98;
+  height: 100%;
+  width: 0;
+  -webkit-transition: 1s ease 0.3s;
+  transition: 1s ease 0.3s;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.speed-test__btn--progress {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 15px;
+  margin: 0 auto 20px auto;
+  position: absolute;
+  left: 36.5%;
+  top: 378px;
+}
+
+.speed-test__btn--progress:hover {
+  background-color: #2FBCD3;
+  color: #fff;
+  cursor: default;
+}
+
 .speedometer {
   position: relative;
 }
@@ -1009,7 +1078,7 @@ a {
 }
 
 .speedometer-holder {
-  margin-top: 108px;
+  margin-top: 190px;
 }
 
 .contact {

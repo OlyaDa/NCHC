@@ -23,5 +23,26 @@ function toggleCheckboxes() {
     }
 }
 
+//progress bar
+
+const progress = document.querySelector(".progress-done");
+const progressText = document.querySelector(".progress-text");
+const input = document.querySelector(".input");
+const maxInput = document.querySelector(".maxInput");
+let number = 10;
+let maxNumber = 160;
+
+function changeWidth() {
+    if (number > maxNumber) {
+        number = maxNumber;
+    }
+    const percentage = (number / maxNumber) * 100;
+    progress.style.width = `${percentage}%`;
+    progressText.innerText = `${Math.ceil(percentage)}%`;
+}
+
+changeWidth();
+
+
 
 
